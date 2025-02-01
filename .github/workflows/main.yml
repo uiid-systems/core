@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: Get pnpm store directory
         shell: bash
@@ -48,14 +48,8 @@ jobs:
       - name: Check types
         run: pnpm tsc
 
-      - name: Check linting
-        run: pnpm lint:ci
-
       - name: Run tests
         run: pnpm test:ci
-
-      - name: Build storybook
-        run: pnpm storybook:build
 
       - name: Build package
         run: pnpm build

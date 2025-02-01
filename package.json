@@ -1,6 +1,6 @@
 {
   "name": "@uiid/core",
-  "description": "",
+  "description": "core styles, utils for uiid",
   "version": "0.0.0",
   "author": "",
   "license": "",
@@ -11,28 +11,20 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "biome check --write --unsafe .",
-    "lint:ci": "biome check --unsafe .",
     "test": "vitest",
     "test:ci": "vitest run --coverage",
-    "commit": "cz",
     "release": "pnpm build && pnpm release-it"
   },
   "types": "./dist/index.d.ts",
   "exports": {
+    "./core.css": "./dist/core.css",
     ".": {
-      "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     }
   },
   "files": [
     "dist"
   ],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
-    }
-  },
   "release-it": {
     "git": {
       "commitMessage": "chore(release): v${version}"
