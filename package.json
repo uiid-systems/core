@@ -1,12 +1,11 @@
 {
   "name": "@uiid/core",
-  "description": "core styles, utils for uiid",
+  "description": "core styles, utils",
   "version": "0.0.0-alpha.2",
   "private": false,
-  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/uiid-systems/core.git"
+    "url": "https://github.com/uiid-systems/core"
   },
   "publishConfig": {
     "access": "public",
@@ -29,6 +28,10 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "dependencies": {
+    "cva": "1.0.0-beta.3",
+    "tailwind-merge": "^3.0.1"
+  },
   "devDependencies": {
     "@types/node": "22.10.5",
     "add": "^2.0.6",
@@ -38,14 +41,5 @@
     "tsup": "8.3.5",
     "typescript": "5.7.2"
   },
-  "pnpm": {
-    "overrides": {
-      "micromatch@<4.0.8": ">=4.0.8"
-    }
-  },
-  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
-  "dependencies": {
-    "cva": "1.0.0-beta.3",
-    "tailwind-merge": "^3.0.1"
-  }
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }
