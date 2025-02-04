@@ -2,10 +2,6 @@
   "name": "@uiid/core",
   "description": "core styles, utils",
   "version": "0.0.0-alpha.3",
-  "dependencies": {
-    "cva": "1.0.0-beta.3",
-    "tailwind-merge": "^3.0.1"
-  },
   "exports": {
     "./globals.css": "./dist/globals.css",
     ".": {
@@ -20,13 +16,9 @@
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uiid-systems/core"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "dependencies": {
+    "cva": "1.0.0-beta.3",
+    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "22.10.5",
@@ -36,6 +28,14 @@
     "tsconfig-paths": "4.2.0",
     "tsup": "8.3.5",
     "typescript": "5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiid-systems/core"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "engines": {
     "node": ">=18.0.0"
