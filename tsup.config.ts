@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts", "src/styles.css"],
+  entry: ["src/index.ts", "src/globals.css"],
   treeshake: false,
   sourcemap: "inline",
   minify: true,
