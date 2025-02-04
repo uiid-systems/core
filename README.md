@@ -3,5 +3,5 @@ import { cva, cx, compose, type VariantProps } from "@uiid/core";
 ```
 
 ```tsx
-import "@uiid/core/styles.css";
+import "@uiid/core/globals.css";
 ```
