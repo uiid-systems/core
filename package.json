@@ -14,9 +14,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "version": "changeset version",
-    "release": "pnpm run build && changeset publish",
-    "changeset": "changeset"
+    "release": "pnpm run build && pnpm publish"
   },
   "exports": {
     "./styles.css": "./dist/styles.css",
@@ -32,7 +30,6 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.12",
     "@types/node": "22.10.5",
     "add": "^2.0.6",
     "pnpm": "^9.15.4",
