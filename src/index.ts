@@ -1,2 +1,2 @@
 export * from "./cva";
-export * from "./layoutStyles";
+export * from "./styleProps";
