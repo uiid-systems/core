@@ -10,6 +10,5 @@ export default defineConfig({
   splitting: false,
   format: ["esm"],
   loader: { ".css": "copy" },
-  // external: ["cva", "tailwind-merge"],
   injectStyle: false,
 });
