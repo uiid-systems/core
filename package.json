@@ -1,8 +1,7 @@
 {
   "name": "@uiid/core",
   "description": "core styles, utils",
-  "version": "0.0.0-alpha.12",
-  "private": false,
+  "version": "0.0.0-alpha.13",
   "exports": {
     "./globals.css": "./dist/globals.css",
     ".": {
@@ -12,6 +11,10 @@
     "./constants": {
       "types": "./dist/constants/index.d.ts",
       "import": "./dist/constants/index.mjs"
+    },
+    "./storybook": {
+      "types": "./dist/storybook/index.d.ts",
+      "import": "./dist/storybook/index.mjs"
     }
   },
   "files": [
@@ -22,6 +25,7 @@
     "release": "pnpm run build && pnpm publish"
   },
   "dependencies": {
+    "@storybook/types": "^8.5.6",
     "cva": "1.0.0-beta.3",
     "tailwind-merge": "^3.0.1"
   },
