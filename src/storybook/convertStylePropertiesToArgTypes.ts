@@ -1,8 +1,8 @@
 import { ArgTypes } from "@storybook/types";
-import type { StyleProp } from "../styleProps";
+import type { StyleProp } from "../properties/styleProps";
 
 export const convertStylePropertiesToArgTypes = (
-  properties: Record<string, StyleProp>,
+  properties: Record<string, StyleProp<any>>,
   category?: string
 ): ArgTypes => {
   return Object.entries(properties).reduce((acc, [key, prop]) => {
