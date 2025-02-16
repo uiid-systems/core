@@ -1,7 +1,7 @@
 {
   "name": "@uiid/core",
   "description": "core styles, utils",
-  "version": "0.0.0-alpha.18",
+  "version": "0.0.0-alpha.19",
   "exports": {
     "./globals.css": "./dist/globals.css",
     ".": {
@@ -17,8 +17,8 @@
       "import": "./dist/storybook/index.mjs"
     },
     "./properties": {
-      "types": "./dist/storybook/index.d.ts",
-      "import": "./dist/storybook/index.mjs"
+      "types": "./dist/properties/index.d.ts",
+      "import": "./dist/properties/index.mjs"
     }
   },
   "files": [
