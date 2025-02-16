@@ -1,9 +1,9 @@
 {
   "name": "@uiid/core",
   "description": "core styles, utils",
-  "version": "0.0.0-alpha.20",
+  "version": "0.0.0-alpha.21",
   "exports": {
-    "./globals.css": "./dist/globals.css",
+    "./styles/globals.css": "./dist/styles/globals.css",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs"
@@ -12,13 +12,17 @@
       "types": "./dist/constants/index.d.ts",
       "import": "./dist/constants/index.mjs"
     },
+    "./properties": {
+      "types": "./dist/properties/index.d.ts",
+      "import": "./dist/properties/index.mjs"
+    },
     "./storybook": {
       "types": "./dist/storybook/index.d.ts",
       "import": "./dist/storybook/index.mjs"
     },
-    "./properties": {
-      "types": "./dist/properties/index.d.ts",
-      "import": "./dist/properties/index.mjs"
+    "./styles": {
+      "types": "./dist/styles/index.d.ts",
+      "import": "./dist/styles/index.mjs"
     }
   },
   "files": [
@@ -26,7 +30,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "release": "pnpm run build && pnpm publish"
+    "release": "pnpm build && pnpm publish"
   },
   "dependencies": {
     "@storybook/types": "^8.5.6",
@@ -35,9 +39,9 @@
   },
   "devDependencies": {
     "@types/node": "22.10.5",
-    "@types/react": "^19.0.8",
+    "@types/react": "^19.0.9",
     "add": "^2.0.6",
-    "pnpm": "^9.15.4",
+    "pnpm": "^9.15.5",
     "ts-node": "10.9.2",
     "tsconfig-paths": "4.2.0",
     "tsup": "8.3.5",

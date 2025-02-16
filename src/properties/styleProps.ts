@@ -3,7 +3,7 @@ export type StyleProp<K extends keyof React.CSSProperties> = {
   values: Array<React.CSSProperties[K] | number>;
   scale?: {
     variable: `--${string}`;
-    unit: "px" | "em" | "rem" | "dvh" | "dvw" | "%";
+    unit?: "px" | "em" | "rem" | "dvh" | "dvw" | "%";
   };
 };
 
@@ -36,7 +36,7 @@ export const styleProps = <P extends Record<string, StyleProp<any>>>(
       if (typeof value === "number") {
         styles[property as keyof React.CSSProperties] = `calc(var(${
           scale.variable
-        })*${value + scale.unit})` as any;
+        })*${value}${scale.unit ?? ""})` as any;
       }
     } else {
       styles[property as keyof React.CSSProperties] = value as any;
