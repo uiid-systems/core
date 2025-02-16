@@ -28,9 +28,9 @@ export const styleProps = <P extends Record<string, StyleProp<any>>>(
     const propertyConfig = properties[propKey];
     const property = propertyConfig?.property;
 
-    const { scale } = propertyConfig;
-
     if (!propertyConfig) return;
+
+    const { scale } = propertyConfig;
 
     if (scale) {
       if (typeof value === "number") {
@@ -43,5 +43,5 @@ export const styleProps = <P extends Record<string, StyleProp<any>>>(
     }
   });
 
-  return styles;
+  return { ...styles, ...props.style };
 };
