@@ -30,6 +30,8 @@ export const styleProps = <P extends Record<string, StyleProp<any>>>(
 
     const { scale } = propertyConfig;
 
+    if (!propertyConfig) return;
+
     if (scale) {
       if (typeof value === "number") {
         styles[property as keyof React.CSSProperties] = `calc(var(${
