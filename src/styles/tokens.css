@@ -1,0 +1,26 @@
+:root {
+  --white: #fff;
+  --black: #000;
+
+  --background: var(--white);
+  --foreground: var(--black);
+
+  /** dark mode */
+  @media (prefers-color-scheme: dark) {
+    --background: var(--black);
+    --foreground: var(--white);
+  }
+
+  /** validation colors */
+  --shade-negative: tomato;
+  --shade-cautious: gold;
+  --shade-positive: mediumseagreen;
+
+  /** muted colors */
+  --shade-muted: color-mix(in srgb, var(--foreground), var(--background) / 0.5);
+  --shade-accent: color-mix(
+    in srgb,
+    var(--foreground),
+    var(--background) / 0.75
+  );
+}
