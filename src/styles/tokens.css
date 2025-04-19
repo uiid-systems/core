@@ -5,12 +5,6 @@
   --background: var(--white);
   --foreground: var(--black);
 
-  /** dark mode */
-  @media (prefers-color-scheme: dark) {
-    --background: var(--black);
-    --foreground: var(--white);
-  }
-
   /** validation colors */
   --shade_negative: tomato;
   --shade_cautious: gold;
@@ -19,4 +13,17 @@
   /** muted colors */
   --shade_muted: color-mix(in srgb, var(--foreground), var(--background) 50%);
   --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 25%);
+
+  /** spacing scales **/
+  --spacing_scale: 1rem;
+  --spacing_scale_inline: var(--spacing_scale);
+  --spacing_scale_block: var(--spacing_scale);
+}
+
+/** dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+    --foreground: var(--white);
+  }
 }

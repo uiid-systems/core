@@ -14,6 +14,7 @@ export type StyleProps<P extends Record<string, StyleProp<any>>> = {
 /**
  * Converts style props to React.CSSProperties
  * Handles both direct CSS values and spacing multipliers
+ * @deprecated prefer @uiid/style-props/styleProps
  */
 export const styleProps = <P extends Record<string, StyleProp<any>>>(
   props: StyleProps<P>,

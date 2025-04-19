@@ -1,5 +1,8 @@
 type StyleObject = Record<string, React.CSSProperties>;
 
+/**
+ * @deprecated prefer @uiid/style-props/toggleProps
+ * */
 export const booleanProps = (
   props: Record<string, any>,
   styleObjects: StyleObject
