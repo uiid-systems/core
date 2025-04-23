@@ -3,7 +3,7 @@
   "description": "core styles, utils",
   "version": "0.0.0-alpha.31",
   "exports": {
-    "./styles/globals.css": "./dist/styles/globals.css",
+    "./styles.css": "./dist/styles/globals.css",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs"
@@ -12,17 +12,13 @@
       "types": "./dist/constants/index.d.ts",
       "import": "./dist/constants/index.mjs"
     },
-    "./properties": {
-      "types": "./dist/properties/index.d.ts",
-      "import": "./dist/properties/index.mjs"
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.mjs"
     },
-    "./storybook": {
-      "types": "./dist/storybook/index.d.ts",
-      "import": "./dist/storybook/index.mjs"
-    },
-    "./styles": {
-      "types": "./dist/styles/index.d.ts",
-      "import": "./dist/styles/index.mjs"
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "import": "./dist/utils/index.mjs"
     }
   },
   "files": [
