@@ -4,11 +4,8 @@ export default defineConfig({
   entry: [
     "src/index.ts",
     "src/constants/index.ts",
-    "src/properties/index.ts",
-    "src/storybook/index.ts",
     "src/styles/index.ts",
     "src/styles/globals.css",
-    "src/styles/tokens.css",
   ],
   treeshake: false,
   sourcemap: "inline",
