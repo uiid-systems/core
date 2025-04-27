@@ -8,6 +8,7 @@ export default defineConfig({
     "src/types/index.ts",
     "src/utils/index.ts",
     "src/styles/globals.css",
+    "src/styles/tokens.css",
   ],
   treeshake: false,
   sourcemap: "inline",
