@@ -5,16 +5,20 @@
   --background: var(--white);
   --foreground: var(--black);
 
-  /** validation colors */
-  --shade_negative: tomato;
+  --shade_negative: orangered;
+  --shade_warning: darkorange;
   --shade_cautious: gold;
   --shade_positive: mediumseagreen;
+  --shade_info: dodgerblue;
 
-  /** muted colors */
-  --shade_muted: color-mix(in srgb, var(--foreground), var(--background) 50%);
+  --shadow_muted: color-mix(in srgb, var(--foreground), var(--background) 75%);
+  --shade_halftone: color-mix(
+    in srgb,
+    var(--foreground),
+    var(--background) 50%
+  );
   --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 25%);
 
-  /** spacing scales **/
   --spacing_scale: 1rem;
   --spacing_scale_inline: var(--spacing_scale);
   --spacing_scale_block: var(--spacing_scale);
