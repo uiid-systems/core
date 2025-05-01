@@ -1,16 +1,12 @@
 {
   "name": "@uiid/core",
-  "description": "core styles, utils",
-  "version": "0.0.0-alpha.34",
+  "description": "core styles, types, utils",
+  "version": "0.0.0-alpha.35",
   "exports": {
     "./styles.css": "./dist/styles/globals.css",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs"
-    },
-    "./constants": {
-      "types": "./dist/constants/index.d.ts",
-      "import": "./dist/constants/index.mjs"
     },
     "./types": {
       "types": "./dist/types/index.d.ts",

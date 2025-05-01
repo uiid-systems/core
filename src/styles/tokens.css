@@ -1,33 +1,29 @@
 :root {
+  color-scheme: light dark;
+
   --white: white;
   --black: black;
 
-  --background: var(--white);
-  --foreground: var(--black);
+  --background: light-dark(var(--white), var(--black));
+  --foreground: light-dark(var(--black), var(--white));
 
+  /** color shades */
   --shade_negative: orangered;
   --shade_warning: darkorange;
   --shade_cautious: gold;
   --shade_positive: mediumseagreen;
-  --shade_info: dodgerblue;
+  --shade_informative: dodgerblue;
 
-  --shadow_muted: color-mix(in srgb, var(--foreground), var(--background) 75%);
+  --shade_muted: color-mix(in srgb, var(--foreground), var(--background) 25%);
   --shade_halftone: color-mix(
     in srgb,
     var(--foreground),
     var(--background) 50%
   );
-  --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 25%);
+  --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 75%);
+  --shade_surface: color-mix(in srgb, var(--foreground), var(--background) 95%);
 
   --spacing_scale: 1rem;
   --spacing_scale_inline: var(--spacing_scale);
   --spacing_scale_block: var(--spacing_scale);
-}
-
-/** dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--black);
-    --foreground: var(--white);
-  }
 }
