@@ -21,7 +21,11 @@
     var(--background) 50%
   );
   --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 75%);
-  --shade_surface: color-mix(in srgb, var(--foreground), var(--background) 95%);
+  --shade_surface: color-mix(
+    in srgb,
+    var(--foreground),
+    var(--background) 92.5%
+  );
 
   --spacing_scale: 1rem;
   --spacing_scale_inline: var(--spacing_scale);
