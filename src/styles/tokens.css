@@ -7,20 +7,19 @@
   --background: light-dark(var(--white), var(--black));
   --foreground: light-dark(var(--black), var(--white));
 
-  /** color shades */
   --shade_negative: orangered;
   --shade_pressing: darkorange;
   --shade_cautious: gold;
   --shade_positive: mediumseagreen;
   --shade_informative: dodgerblue;
 
-  --shade_muted: color-mix(in srgb, var(--foreground), var(--background) 25%);
+  --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 25%);
   --shade_halftone: color-mix(
     in srgb,
     var(--foreground),
     var(--background) 50%
   );
-  --shade_accent: color-mix(in srgb, var(--foreground), var(--background) 75%);
+  --shade_muted: color-mix(in srgb, var(--foreground), var(--background) 75%);
   --shade_surface: color-mix(
     in srgb,
     var(--foreground),
