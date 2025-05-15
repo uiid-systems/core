@@ -9,7 +9,7 @@
 
   /** color shades */
   --shade_negative: orangered;
-  --shade_warning: darkorange;
+  --shade_pressing: darkorange;
   --shade_cautious: gold;
   --shade_positive: mediumseagreen;
   --shade_informative: dodgerblue;
@@ -27,7 +27,7 @@
     var(--background) 92.5%
   );
 
-  --spacing_scale: 1rem;
+  --spacing_scale: 0.25rem;
   --spacing_scale_inline: var(--spacing_scale);
   --spacing_scale_block: var(--spacing_scale);
 }
