@@ -1,0 +1,23 @@
+:root {
+  --spacing_scale: 1rem;
+}
+
+#theme-toggle {
+  margin-block-end: var(--spacing_scale);
+}
+
+.color-grid {
+  display: flex;
+  gap: var(--spacing_scale);
+  margin-block-end: var(--spacing_scale);
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.color-grid__item {
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}

@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light dark;
+
+  --white: white;
+  --black: black;
+
+  --background: light-dark(var(--white), var(--black));
+  --foreground: light-dark(var(--black), var(--white));
+
+  --shade_negative: orangered;
+  --shade_pressing: darkorange;
+  --shade_cautious: gold;
+  --shade_positive: mediumseagreen;
+  --shade_informative: dodgerblue;
+
+  /** neutrals */
+  --percentage_accent: 25%;
+  --percentage_halftone: 50%;
+  --percentage_muted: 75%;
+  --percentage_surface: 92.5%;
+
+  --shade_accent: color-mix(
+    in oklab,
+    var(--foreground),
+    var(--background) var(--percentage_accent)
+  );
+  --shade_halftone: color-mix(
+    in oklab,
+    var(--foreground),
+    var(--background) var(--percentage_halftone)
+  );
+  --shade_muted: color-mix(
+    in oklab,
+    var(--foreground),
+    var(--background) var(--percentage_muted)
+  );
+  --shade_surface: color-mix(
+    in oklab,
+    var(--foreground),
+    var(--background) var(--percentage_surface)
+  );
+}
+
+[data-theme="dark"] {
+  --background: var(--black);
+  --foreground: var(--white);
+}
+
+[data-theme="light"] {
+  --background: var(--white);
+  --foreground: var(--black);
+}
