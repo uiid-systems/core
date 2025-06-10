@@ -14,7 +14,7 @@ html {
 }
 
 #theme-toggle {
-  width: 600px;
+  width: 300px;
   margin-inline: auto;
   text-align: center;
   padding: 0.5rem;
@@ -86,3 +86,51 @@ html {
 .shade-informative {
   background-color: var(--shade_informative);
 }
+
+/* Contrast testing grids */
+.contrast-test {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-inline: auto;
+  margin-block-end: 4rem;
+  width: 90%;
+  max-width: 800px;
+}
+.letter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
+}
+.letter-grid span {
+  display: inline-block;
+}
+.letter-large span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.letter-small span {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Eye chart styles */
+.eye-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+.eye-chart .row span {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  display: block;
+}
+.eye-chart .row-1 span { font-size: 4rem; }
+.eye-chart .row-2 span { font-size: 3rem; }
+.eye-chart .row-3 span { font-size: 2.5rem; }
+.eye-chart .row-4 span { font-size: 2rem; }
+.eye-chart .row-5 span { font-size: 1.5rem; }
+.eye-chart .row-6 span { font-size: 1rem; }
