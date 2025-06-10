@@ -7,6 +7,8 @@ export default defineConfig({
     "src/utils/index.ts",
     "src/styles/globals.css",
     "src/styles/tokens.css",
+    "src/styles/tokens/colors.css",
+    "src/styles/tokens/spacing.css",
   ],
   treeshake: false,
   sourcemap: "inline",
