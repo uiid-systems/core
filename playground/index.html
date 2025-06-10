@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,54 +9,43 @@
     <link rel="stylesheet" href="../src/styles/globals.css" />
   </head>
   <body>
+    <div class="color-grid">
+      <!-- <div class="color-grid__layer shade-negative">
+        <div class="color-grid__layer shade-pressing">
+          <div class="color-grid__layer shade-cautious">
+            <div class="color-grid__layer shade-positive">
+              <div class="color-grid__layer shade-informative">
+                <div class="color-grid__layer shade-background"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="color-grid__layer shade-background">
+        <div class="color-grid__layer shade-surface">
+          <div class="color-grid__layer shade-muted">
+            <div class="color-grid__layer shade-halftone">
+              <div class="color-grid__layer shade-accent">
+                <div class="color-grid__layer shade-foreground"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="color-grid__layer shade-informative">
+        <div class="color-grid__layer shade-positive">
+          <div class="color-grid__layer shade-cautious">
+            <div class="color-grid__layer shade-pressing">
+              <div class="color-grid__layer shade-negative">
+                <div class="color-grid__layer shade-background"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
     <button id="theme-toggle">Toggle Theme</button>
-    <div class="color-grid">
-      <div
-        class="color-grid__item"
-        style="background-color: var(--background)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_surface)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_muted)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_halftone)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_accent)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--foreground)"
-      ></div>
-    </div>
-    <div class="color-grid">
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_negative)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_pressing)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_cautious)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_positive)"
-      ></div>
-      <div
-        class="color-grid__item"
-        style="background-color: var(--shade_informative)"
-      ></div>
-    </div>
   </body>
 </html>

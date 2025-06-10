@@ -1,24 +1,34 @@
+/* Base tokens: colors and mixing percentages */
 :root {
-  color-scheme: light dark;
-
   --white: white;
   --black: black;
 
-  --background: light-dark(var(--white), var(--black));
-  --foreground: light-dark(var(--black), var(--white));
+  /* Percentages for light/dark variants */
+  --percentage_surface-light: 95%;
+  --percentage_muted-light: 75%;
+  --percentage_accent-light: 35%;
 
+  --percentage_surface-dark: 80%;
+  --percentage_muted-dark: 65%;
+  --percentage_accent-dark: 20%;
+
+  /* Active percentages default to light */
+  --percentage_surface: var(--percentage_surface-light);
+  --percentage_muted: var(--percentage_muted-light);
+  --percentage_accent: var(--percentage_accent-light);
+
+  /* Base colors default to light */
+  --background: var(--white);
+  --foreground: var(--black);
+
+  /* Semantic shades */
   --shade_negative: orangered;
   --shade_pressing: darkorange;
   --shade_cautious: gold;
   --shade_positive: mediumseagreen;
   --shade_informative: dodgerblue;
 
-  /** neutrals */
-  --percentage_accent: 25%;
-  --percentage_halftone: 50%;
-  --percentage_muted: 75%;
-  --percentage_surface: 92.5%;
-
+  /* Mixed shades */
   --shade_accent: color-mix(
     in oklab,
     var(--foreground),
@@ -27,7 +37,7 @@
   --shade_halftone: color-mix(
     in oklab,
     var(--foreground),
-    var(--background) var(--percentage_halftone)
+    var(--background) 50%
   );
   --shade_muted: color-mix(
     in oklab,
@@ -41,12 +51,33 @@
   );
 }
 
-[data-theme="dark"] {
-  --background: var(--black);
-  --foreground: var(--white);
+/* Switch based on system preference if no explicit data-theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --percentage_surface: var(--percentage_surface-dark);
+    --percentage_muted: var(--percentage_muted-dark);
+    --percentage_accent: var(--percentage_accent-dark);
+
+    --background: var(--black);
+    --foreground: var(--white);
+  }
 }
 
-[data-theme="light"] {
+/* Explicit theme overrides */
+:root[data-theme="light"] {
+  --percentage_surface: var(--percentage_surface-light);
+  --percentage_muted: var(--percentage_muted-light);
+  --percentage_accent: var(--percentage_accent-light);
+
   --background: var(--white);
   --foreground: var(--black);
+}
+
+:root[data-theme="dark"] {
+  --percentage_surface: var(--percentage_surface-dark);
+  --percentage_muted: var(--percentage_muted-dark);
+  --percentage_accent: var(--percentage_accent-dark);
+
+  --background: var(--black);
+  --foreground: var(--white);
 }
