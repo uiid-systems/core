@@ -19,8 +19,8 @@ html {
   margin-inline: auto;
   text-align: center;
   padding: 0.5rem;
-  background-color: var(--foreground);
-  color: var(--background);
+  background-color: var(--shade_foreground);
+  color: var(--shade_background);
 
   &:hover {
     scale: 1.01;
@@ -54,11 +54,11 @@ html {
 }
 
 .shade-foreground {
-  background-color: var(--foreground);
+  background-color: var(--shade_foreground);
 }
 
 .shade-background {
-  background-color: var(--background);
+  background-color: var(--shade_background);
 }
 
 .shade-surface {

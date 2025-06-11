@@ -1,7 +1,7 @@
 {
   "name": "@uiid/core",
   "description": "core styles, types, utils",
-  "version": "0.0.0-alpha.44",
+  "version": "0.0.0-alpha.45",
   "exports": {
     "./styles.css": "./dist/styles/globals.css",
     ".": {

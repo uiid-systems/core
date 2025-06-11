@@ -1,8 +1,8 @@
 @import url("./tokens.css") layer(uiid.tokens);
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--shade_background);
+  color: var(--shade_foreground);
 
   font-family: ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
