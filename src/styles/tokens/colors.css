@@ -21,33 +21,40 @@
   --background: var(--white);
   --foreground: var(--black);
 
+  /** alias for now */
+  --shade_background: var(--white);
+  --shade_foreground: var(--black);
+
   /* Semantic shades */
-  --shade_negative: orangered;
-  --shade_pressing: darkorange;
-  --shade_cautious: gold;
-  --shade_positive: mediumseagreen;
-  --shade_informative: dodgerblue;
+  --shade-negative: #fa5053;
+  /* --shade_negative: orangered; */
+  --shade_pressing: #ff991c;
+  --shade-cautious: #ffed29;
+  /* --shade_cautious: gold; */
+  --shade-positive: #3fff00;
+  /* --shade_positive: mediumseagreen; */
+  --shade_informative: #00bfff;
 
   /* Mixed shades */
   --shade_accent: color-mix(
     in oklab,
-    var(--foreground),
-    var(--background) var(--percentage_accent)
+    var(--shade_foreground),
+    var(--shade_sbackground) var(--percentage_accent)
   );
   --shade_halftone: color-mix(
     in oklab,
-    var(--foreground),
-    var(--background) 50%
+    var(--shade_foreground),
+    var(--shade_sbackground) 50%
   );
   --shade_muted: color-mix(
     in oklab,
-    var(--foreground),
-    var(--background) var(--percentage_muted)
+    var(--shade_foreground),
+    var(--shade_sbackground) var(--percentage_muted)
   );
   --shade_surface: color-mix(
     in oklab,
-    var(--foreground),
-    var(--background) var(--percentage_surface)
+    var(--shade_foreground),
+    var(--shade_sbackground) var(--percentage_surface)
   );
 }
 
@@ -71,6 +78,8 @@
 
   --background: var(--white);
   --foreground: var(--black);
+  --shade_background: var(--white);
+  --shade_foreground: var(--black);
 }
 
 :root[data-theme="dark"] {
@@ -80,4 +89,6 @@
 
   --background: var(--black);
   --foreground: var(--white);
+  --shade_background: var(--black);
+  --shade_foreground: var(--white);
 }

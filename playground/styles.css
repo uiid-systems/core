@@ -14,10 +14,20 @@ html {
 }
 
 #theme-toggle {
+  cursor: pointer;
   width: 300px;
   margin-inline: auto;
   text-align: center;
   padding: 0.5rem;
+  background-color: var(--foreground);
+  color: var(--background);
+
+  &:hover {
+    scale: 1.01;
+  }
+  &:active {
+    scale: initial;
+  }
 }
 
 .color-grid {
@@ -115,22 +125,16 @@ html {
   font-weight: 600;
 }
 
-/* Eye chart styles */
-.eye-chart {
+.inner {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
   align-items: center;
-  gap: 1rem;
-  margin-block: 2rem;
+  justify-content: center;
+
+  span {
+    color: var(--background);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
-.eye-chart .row span {
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  display: block;
-}
-.eye-chart .row-1 span { font-size: 4rem; }
-.eye-chart .row-2 span { font-size: 3rem; }
-.eye-chart .row-3 span { font-size: 2.5rem; }
-.eye-chart .row-4 span { font-size: 2rem; }
-.eye-chart .row-5 span { font-size: 1.5rem; }
-.eye-chart .row-6 span { font-size: 1rem; }
