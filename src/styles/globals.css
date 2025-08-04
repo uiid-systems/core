@@ -1,10 +1,9 @@
-@import url("./tokens.css") layer(uiid.tokens);
+@import url("./tokens/colors.css") layer(uiid.tokens);
+@import url("./tokens/spacing.css") layer(uiid.tokens);
 
 body {
   background-color: var(--shade_background);
   color: var(--shade_foreground);
-
-  font-family: ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

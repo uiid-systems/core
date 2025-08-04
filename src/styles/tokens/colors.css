@@ -2,12 +2,7 @@
 :root {
   --white: white;
   --black: black;
-  --background: var(--white);
-  --foreground: var(--black);
-  /**
-    * we use shade, shadcn doesn't.
-    * let's support both!
-    */
+
   --shade_background: var(--background, var(--white));
   --shade_foreground: var(--black, var(--black));
 

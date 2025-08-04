@@ -4,9 +4,7 @@ export default defineConfig({
   entry: [
     "src/index.ts",
     "src/types/index.ts",
-    "src/utils/index.ts",
     "src/styles/globals.css",
-    "src/styles/tokens.css",
     "src/styles/tokens/colors.css",
     "src/styles/tokens/spacing.css",
   ],

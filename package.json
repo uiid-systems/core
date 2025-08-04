@@ -1,9 +1,9 @@
 {
   "name": "@uiid/core",
   "description": "core styles, types, utils",
-  "version": "0.0.0-alpha.48",
+  "version": "0.0.0-alpha.49",
   "exports": {
-    "./styles.css": "./dist/styles/globals.css",
+    "./styles": "./dist/styles/globals.css",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs"
@@ -11,10 +11,6 @@
     "./types": {
       "types": "./dist/types/index.d.ts",
       "import": "./dist/types/index.mjs"
-    },
-    "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "import": "./dist/utils/index.mjs"
     }
   },
   "files": [
@@ -23,11 +19,6 @@
   "scripts": {
     "build": "tsup",
     "release": "pnpm build && pnpm publish"
-  },
-  "dependencies": {
-    "@storybook/types": "^8.5.6",
-    "cva": "1.0.0-beta.3",
-    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "22.10.5",
